@@ -1,0 +1,12 @@
+from profanity_check import predict
+
+# Example text (replace with your converted text)
+user_text = "Your converted text goes here."
+
+# Predict if the text is offensive (1) or not (0)
+prediction = predict([user_text])
+
+if prediction[0] == 1:
+    print("Language is inappropriate.")
+else:
+    print("Content is not harmful.")
